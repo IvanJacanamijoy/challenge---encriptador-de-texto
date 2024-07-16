@@ -4,28 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Challenge - encriptador de texto</title>
-    <link rel="stylesheet" href="style,css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header></header>
-    <main>
-        <div id="container">
-            <img src="#">
-            <div id="encriptado">
-                <input type="text" id="textoDeEntrada">
-                <p></p>
-                <div id="container-botones">
-                    <button onclick="encriptarTexto();">encriptar</button>
-                    <button onclick="desencriptarTexto();">desencriptar</button>
-                </div>
+    <main class="contenido">
+        <div class="contenido__imagen">
+            <img class="contenido__logo" src="img/Logo@2x.png" id="Logo">
+        </div>
+        <div class="contenido__encriptador">
+            <input type="text" id="textoDeEntrada" placeholder="Ingrese el texto aqui">
+            <div class="contenido__textoAdvertencia">
+                <img src="img/bi_exclamation-circle-fill-1.png" id="logo-advertencia">
+                <p>Solo letras minúsculas y sin acentos</p>
             </div>
-            <div id="desifrado">
+            <div class="contenido__encriptador__botones">
+                <button class="encriptador__botones" onclick="encriptarTexto();">encriptar</button>
+                <button class="encriptador__botones" onclick="desencriptarTexto();">desencriptar</button>
+            </div>
+        </div>
+
+        <div class="contenido__salida">
+            <div id="contenido__parcial">
+                <img src="/img/Muñeco.png" alt="imagen de referencia">
+                <p class="contenido__parcial1">Ningún mensaje fue encontrado</p>
+                <p class="contenido__parcial2" >Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div id="contenido__textoDeSalida" style="display: none;">
                 <p id="textoDeSalida"></p>
-                <button onclick="copiarTexto();">copiar texto</button>
+                <button id="botonCopiar" onclick="copiarTexto()";>copiar texto</button>
             </div>
         </div>
     </main>
-    <footer></footer>
-    <script src="app.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
