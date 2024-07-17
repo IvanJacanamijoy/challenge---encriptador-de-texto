@@ -13,26 +13,27 @@
             <img class="contenido__logo" src="img/Logo@2x.png" id="Logo">
         </div>
         <div class="contenido__encriptador">
-            <input type="text" id="textoDeEntrada" placeholder="Ingrese el texto aqui">
+            <textarea id="textoDeEntrada" placeholder="Ingrese el texto aqui"></textarea>
             <div class="contenido__textoAdvertencia">
                 <img src="img/bi_exclamation-circle-fill-1.png" id="logo-advertencia">
-                <p>Solo letras minúsculas y sin acentos</p>
+                <p class="contenido__advertenciaTexto">Solo letras minúsculas y sin acentos</p>
             </div>
             <div class="contenido__encriptador__botones">
-                <button class="encriptador__botones" onclick="encriptarTexto();">encriptar</button>
-                <button class="encriptador__botones" onclick="desencriptarTexto();">desencriptar</button>
+                <button id="botonAzul" class="encriptador__botones" onclick="encriptarTexto();">Encriptar</button>
+                <button id="botonBlanco" class="encriptador__botones" onclick="desencriptarTexto();">Desencriptar</button>
             </div>
         </div>
 
         <div class="contenido__salida">
             <div id="contenido__parcial">
                 <img src="/img/Muñeco.png" alt="imagen de referencia">
+                <br>
                 <p class="contenido__parcial1">Ningún mensaje fue encontrado</p>
                 <p class="contenido__parcial2" >Ingresa el texto que desees encriptar o desencriptar.</p>
             </div>
             <div id="contenido__textoDeSalida" style="display: none;">
                 <p id="textoDeSalida"></p>
-                <button id="botonCopiar" onclick="copiarTexto()";>copiar texto</button>
+                <button id="botonCopiar" onclick="copiarTexto()";>Copiar texto</button>
             </div>
         </div>
     </main>
