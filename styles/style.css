@@ -184,6 +184,7 @@ p.contenido__parcial2{
     .contenido__salida{
         width: 100%;
         box-sizing: border-box;
+        min-height: auto;
         height: auto;
         padding: 2rem;
         justify-content: center;
