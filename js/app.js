@@ -84,5 +84,5 @@ function limpiarContenido(){
 
  function mostrarElementoId(id) {
      var boton = document.getElementById(id);
-     boton.style.display = 'block';
+     boton.style.display = 'flex';
 }
